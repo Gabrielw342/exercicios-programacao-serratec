@@ -1,2 +1,2 @@
 # exercicios-programacao-serratec
-atividades feitas dos exercicios
+trabalho pessoal feitas dos exercicios 1 a 10 do google drive
