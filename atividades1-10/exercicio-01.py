@@ -1,5 +1,5 @@
 //fiz o upload da primeira metade do codigo  e ate aqui por enquanto tudo rodou
-//fiz o restante e tentei deixar o codigo mais bonitinho 
+//fiz o restante e tentei deixar o codigo mais arrumado 
 public class Main {
     public static void main(String[] args) {
 
