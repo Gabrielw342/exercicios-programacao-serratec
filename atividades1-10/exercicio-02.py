@@ -1,6 +1,6 @@
 // so o codigo 80% feito mas eu tenho que consertar os {} e algumas outras coisas mas faco isso depois
 //agora sim eu 98% de certeza que esta tudo certo e que ele pode rodar direito
-// parte que cria o sistema  e quais funçoes ele deve chamar
+//ultimo conserto porque so agora que eu vi que as chaves no final do codigo estavam erradas
 public class Main {
     public static void main(String[] args) {
 
@@ -59,10 +59,3 @@ class bancoconta {
     }
 
 }
-
-        }
-
-    }
-
-
-    }
