@@ -1,26 +1,12 @@
-// so o codigo 80% feito mas eu tenho que consertar os {} e algumas outras coisas mas faco isso depois
-//agora sim eu 98% de certeza que esta tudo certo e que ele pode rodar direito
-//ultimo conserto porque so agora que eu vi que as chaves no final do codigo estavam erradas
-public class Main {
-    public static void main(String[] args) {
-
-        bancoconta conta = new bancoconta(6665, "Vinho Diezel");
-
-        conta.depositar(100);
-        conta.sacar(50);
-        conta.exibirConta();
-    }
-}
-
-class bancoconta {
+//so depois de conversar com meu grupo que eu pereci que era pra dividr as funcçoes enao fazendo isso agora em plen sabado
+class BancoConta {
 
     private int numero;
     private double saldo;
     private String titular;
 
-    public bancoconta(int numero, String titular) {
+    public BancoConta(int numero, String titular) {
 
-        // REMOVIDO: criação infinita de objetos
         this.numero = numero;
         this.titular = titular;
         this.saldo = 50.0;
@@ -34,7 +20,7 @@ class bancoconta {
             saldo += valor;
             System.out.println("o deposito foi um sucesso!");
         } else {
-            System.out.println("impossivel realizer esse deposito insira um numero positivo  tente novamente");
+            System.out.println("impossivel realizer esse deposito insira um numero positivo e tente novamente");
         }
     }
 
