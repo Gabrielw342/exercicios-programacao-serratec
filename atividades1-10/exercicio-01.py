@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 //fiz o upload da primeira metade do codigo  e ate aqui por enquanto tudo rodou
 //fiz o restante e tentei deixar o codigo mais arrumado 
+//dei uma ultima olhada e percebi que errei no final na parte do break tambem tentei deixar o codigo mais arrumado denovo    
 public class Main {
     public static void main(String[] args) {
 
@@ -20,6 +23,7 @@ public class Main {
             switch (opcao) {
                 case 1:
                     System.out.println("Saldo atual: R$ " + saldo);
+                    break;
 
                 case 2:
                     System.out.println("Digite o valor do depósito:");
