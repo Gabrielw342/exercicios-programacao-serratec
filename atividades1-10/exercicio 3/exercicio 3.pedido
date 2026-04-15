@@ -1,0 +1,54 @@
+//so botando o codigo inicial eu ainda tenho que consertar mas isso e problema do gabriel do futuro
+import java.util.ArrayList;
+import java.util.List;
+
+public class pedido {
+
+    private cliente cliente;
+    private List<itempedido> itens;
+
+    public pedido(cliente cliente) {
+        if (cliente == null)
+            throw new IllegalArgumentException("cliente nao e valido");
+        this.cliente = cliente;
+        this.itens = new ArrayList<>();
+
+    }
+
+    public void adicionarItem(ItemPedido item) {
+        if (item == null)
+            throw new IllegalArgumentException("item invalido... tente novamente por favor");
+        itens.add(item);
+
+    }
+
+    public void fecharPedido() {
+
+        double totalitens = 0;
+
+        for (itempedido item : itens) {
+            totalitens = +item.getsubtotal();
+
+        }
+
+        double frete = totalitens > 250 ? 0 : 25;
+        double totalfinal = totalitens + frete;
+
+        System.out.println("\n===== RECIBO =====");
+        System.out.println("Cliente: " + cliente.getNome());
+
+        for (itempedido item : itens) {
+            System.out.println(
+                    "- " + item.getsubtotal()
+            );
+
+        }
+
+        System.out.println("valor total dos itens: R$ " + totalitens);
+        System.out.println("frete: R$ " + frete);
+        System.out.println("o valor total e: R$" + totalfinal);
+
+    }
+
+}
+
