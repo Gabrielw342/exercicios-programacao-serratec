@@ -1,4 +1,5 @@
 //adicionei o codigo completo e dessa vez acho que nem precisei consertar nada
+//falei muito cedo literalente errei por cause de um 0
 public final class Caminhao extends Veiculo {
 
     private final double capacidadeCargaToneladas;
@@ -39,7 +40,7 @@ public final class Caminhao extends Veiculo {
     public double calcularIpva() {
         if (isentoIpva())
             return 0.0;
-        return precoFipe * 0.15;
+        return precoFipe * 0.015;
     }
 
 }
